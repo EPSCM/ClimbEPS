@@ -1,0 +1,18 @@
+{
+  "name": "Climb EPS - Escalade",
+  "short_name": "ClimbEPS",
+  "description": "Application EPS de gestion des projets de grimpe en escalade",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme-color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%234f46e5'><rect width='512' height='512' rx='128' fill='%230f172a'/><path d='M256 96c11.05 0 20 8.95 20 20s-8.95 20-20 20-20-8.95-20-20 8.95-20 20-20zm20 143v64h40v40H196v-40h40v-64h-20v-40h40z' fill='%2322d3ee'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
