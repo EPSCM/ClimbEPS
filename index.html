@@ -76,7 +76,6 @@
                 <span class="text-xs text-indigo-400 font-bold px-2 py-0.5 bg-white/10 rounded-md">V2.0</span>
             </div>
             
-            <!-- Red Warning Alert -->
             <div class="w-full bg-red-600/95 text-white text-center py-1.5 px-3 rounded-full text-xs font-bold tracking-wide shadow-inner animate-pulse flex items-center justify-center gap-1.5 border border-red-500">
                 <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
                 PROJET DÉPASSÉ = ÉCHEC
@@ -87,25 +86,18 @@
     <!-- MAIN CONTAINER -->
     <main class="max-w-md w-full mx-auto px-4 mt-4 flex-grow space-y-4">
 
-        <!-- GRAND LOGO D'ACCUEIL ILLUSTRE -->
+        <!-- LOGO -->
         <section class="bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-6 shadow-xl text-center relative overflow-hidden flex flex-col items-center justify-center border border-slate-700/50">
-            <!-- Arrière-plan stylisé -->
             <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
             
-            <!-- Logo Central SVG Composite -->
             <div class="w-32 h-32 relative z-10 mb-2 drop-shadow-[0_4px_12px_rgba(34,211,238,0.3)]">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                    <!-- Grand Mousqueton de structure -->
                     <path d="M70 30C45 30 35 50 35 100C35 150 45 170 70 170H130C155 170 165 150 165 115C165 105 160 100 150 100C140 100 135 105 135 115C135 135 132 142 125 142H75C68 142 65 135 65 100C65 65 68 58 75 58H125C132 58 135 65 135 75C135 85 140 90 150 90C160 90 165 85 165 75C165 40 155 30 130 30H70Z" fill="url(#paint0_linear)" />
-                    <!-- Montagnes à l'intérieur -->
                     <path d="M45 140L80 75L110 120L140 65L165 135" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M65 140L90 95L125 140" stroke="#4f46e5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
-                    <!-- Silhouette du Grimpeur -->
                     <circle cx="138" cy="70" r="7" fill="#ffffff" />
                     <path d="M138 77L128 92L115 90M128 92L133 110L145 118M138 77L148 82L158 75M138 77l-6-8-12 2" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                    <!-- Corde dynamique -->
                     <path d="M115 90C95 95 80 120 85 145" stroke="#ec4899" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
-                    
                     <defs>
                         <linearGradient id="paint0_linear" x1="35" y1="30" x2="165" y2="170" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4f46e5" />
@@ -120,13 +112,12 @@
         </section>
 
         <!-- STEP 1 FORM CARD -->
-        <section id="form-p1" class="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-slate-200/80 p-5 space-y-4 relative overflow-hidden">
+        <section id="form-p1" class="bg-white rounded-3xl shadow-xl border border-slate-200/80 p-5 space-y-4 relative overflow-hidden">
             <div class="flex items-center gap-2 border-b border-slate-100 pb-2 relative z-10">
                 <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold">1</span>
                 <h2 class="text-lg font-bold text-slate-800">Nouveau Passage (P1)</h2>
             </div>
 
-            <!-- Identity Input fields Grid -->
             <div class="grid grid-cols-2 gap-3 relative z-10">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Prénom de l'Élève</label>
@@ -138,13 +129,11 @@
                 </div>
             </div>
 
-            <!-- Color Selection Field -->
             <div class="relative z-10">
                 <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Couleur de la Voie</label>
                 <div id="color-grid" class="grid grid-cols-5 gap-2"></div>
             </div>
 
-            <!-- Heights Selector Matrices -->
             <div class="space-y-3 relative z-10">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Projet à réaliser</label>
@@ -157,7 +146,6 @@
                 </div>
             </div>
 
-            <!-- Submit Primary Entry Button -->
             <button onclick="submitPassage1()" class="ripple w-full bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2 mt-2 relative z-10">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                 Valider le Premier Passage
@@ -165,8 +153,8 @@
         </section>
 
         <!-- PASSAGE 2 MODAL OVERLAY -->
-        <section id="modal-p2" class="hidden fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div class="bg-white rounded-3xl w-full max-w-sm p-5 space-y-4 shadow-2xl border border-slate-100 transform scale-100 transition-transform relative overflow-hidden">
+        <section id="modal-p2" class="hidden fixed inset-0 bg-slate-900/70 z-50 flex items-center justify-center p-4">
+            <div class="bg-white rounded-3xl w-full max-w-sm p-5 space-y-4 shadow-2xl border border-slate-100 relative overflow-hidden">
                 <div class="flex items-center justify-between border-b border-slate-100 pb-2">
                     <div class="flex items-center gap-2">
                         <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold">2</span>
@@ -199,7 +187,7 @@
             </div>
         </section>
 
-        <!-- LIVE DASHBOARD / RESULTS AREA -->
+        <!-- LIVE DASHBOARD -->
         <section class="space-y-3">
             <div class="flex items-center justify-between">
                 <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
@@ -209,7 +197,6 @@
                 <span id="student-count" class="text-xs font-bold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">0 élève(s)</span>
             </div>
 
-            <!-- PDF printable wrapper container -->
             <div id="printable-area" class="space-y-3">
                 <div id="empty-state" class="text-center py-10 bg-white border border-dashed border-slate-300 rounded-3xl flex flex-col items-center justify-center p-6 space-y-3">
                     <svg class="w-16 h-16 text-slate-300" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
@@ -222,10 +209,9 @@
         </section>
     </main>
 
-    <!-- ACTION FOOTER TOOLS (PINNED BAR) -->
-    <footer class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 py-3 shadow-2xl z-40">
+    <!-- ACTION FOOTER TOOLS -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-white/95 border-t border-slate-200 py-3 shadow-2xl z-40">
         <div class="max-w-md mx-auto px-4 flex items-center justify-between gap-3">
-            <!-- Reset Button -->
             <button onclick="resetSession()" class="flex flex-col items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
                 <div class="p-2 bg-slate-100 rounded-xl hover:bg-red-50 transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-4v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
@@ -233,7 +219,6 @@
                 <span class="text-[10px] font-bold mt-1 uppercase tracking-wider">Reset</span>
             </button>
 
-            <!-- Status Indicator Legends -->
             <div class="flex items-center gap-1 bg-slate-100 p-1.5 rounded-xl border border-slate-200 text-[9px] font-bold">
                 <span class="px-1.5 py-0.5 bg-emerald-500 text-white rounded">2/2 OK</span>
                 <span class="px-1.5 py-0.5 bg-yellow-400 text-slate-900 rounded">P2 seul</span>
@@ -241,7 +226,6 @@
                 <span class="px-1.5 py-0.5 bg-red-500 text-white rounded">Échec</span>
             </div>
 
-            <!-- Export PDF Trigger -->
             <button onclick="exportToPDF()" class="ripple bg-slate-900 text-white px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-md hover:bg-slate-800 transition-all">
                 <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                 Export PDF
@@ -253,9 +237,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('Service Worker OK :', reg.scope))
-                    .catch(err => console.log('Échec Service Worker :', err));
+                navigator.serviceWorker.register('sw.js').catch(() => {});
             });
         }
 
@@ -347,7 +329,7 @@
                 color: selectedColor,
                 p1: { project: selectedProjectP1, achieved: selectedAchievedP1, success: successP1 },
                 p2: null,
-                finalColor: successP1 ? 'orange' : 'rouge'
+                finalColor: successP1 ? 'orange' : 'red'
             };
 
             dataset.unshift(record);
@@ -527,25 +509,104 @@
             }
         }
 
-        function exportToPDF() {
+        async function exportToPDF() {
             if (dataset.length === 0) {
                 alert("Aucune donnée à exporter.");
                 return;
             }
-            const element = document.getElementById('printable-area');
+
+            // Calcul des stats
+            const stats = {
+                green: dataset.filter(i => i.finalColor === 'green').length,
+                yellow: dataset.filter(i => i.finalColor === 'yellow').length,
+                orange: dataset.filter(i => i.finalColor === 'orange').length,
+                red: dataset.filter(i => i.finalColor === 'red' || i.finalColor === 'rouge').length
+            };
+
+            // Création d'un conteneur HTML épuré directement au début du DOM (flux standard)
+            const printContainer = document.createElement('div');
+            printContainer.style.padding = '20px';
+            printContainer.style.background = '#ffffff';
+            printContainer.style.color = '#0f172a';
+            printContainer.style.fontFamily = 'Arial, sans-serif';
+
+            const rows = dataset.map((item, idx) => {
+                let statusText = item.finalColor === 'green' ? '2/2 Réussis' :
+                                   item.finalColor === 'yellow' ? 'P2 Réussi' :
+                                   item.finalColor === 'orange' ? 'P1 Réussi' : 'Échec';
+
+                let statusBg = item.finalColor === 'green' ? '#10b981' :
+                                item.finalColor === 'yellow' ? '#f59e0b' :
+                                item.finalColor === 'orange' ? '#f97316' : '#ef4444';
+
+                const p1Ok = item.p1.success ? '<b style="color:#10b981;">✔</b>' : '<b style="color:#ef4444;">✘</b>';
+                const p1Str = `${item.p1.project} / ${item.p1.achieved} ${p1Ok}`;
+
+                const p2Str = item.p2 ? `${item.p2.project} / ${item.p2.achieved} ${item.p2.success ? '<b style="color:#10b981;">✔</b>' : '<b style="color:#ef4444;">✘</b>'}` : '<i style="color:#94a3b8;">Attente</i>';
+
+                return `
+                    <tr style="background-color: ${idx % 2 === 0 ? '#ffffff' : '#f8fafc'};">
+                        <td style="padding: 8px; border: 1px solid #cbd5e1; font-weight: bold; text-transform: capitalize;">${item.name}</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Voie ${item.route} (${item.color})</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">${p1Str}</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">${p2Str}</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1; text-align: center; background-color: ${statusBg}; color: white; font-weight: bold;">
+                            ${statusText}
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            printContainer.innerHTML = `
+                <div style="text-align: center; margin-bottom: 15px; border-bottom: 2px solid #0f172a; padding-bottom: 10px;">
+                    <h1 style="font-size: 20px; margin: 0; font-weight: bold; text-transform: uppercase;">CLIMB EPS — Bilan de Séance</h1>
+                    <p style="font-size: 11px; color: #475569; margin-top: 4px; font-weight: bold;">
+                        Date : ${new Date().toLocaleDateString('fr-FR')} | Élèves : ${dataset.length}
+                    </p>
+                </div>
+
+                <div style="display: flex; justify-content: space-around; margin-bottom: 15px; background: #f1f5f9; padding: 8px; border-radius: 6px; font-size: 11px; font-weight: bold;">
+                    <span style="color:#065f46;">2/2 OK : ${stats.green}</span>
+                    <span style="color:#b45309;">P2 seul : ${stats.yellow}</span>
+                    <span style="color:#c2410c;">P1 seul : ${stats.orange}</span>
+                    <span style="color:#b91c1c;">Échecs : ${stats.red}</span>
+                </div>
+
+                <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                    <thead>
+                        <tr style="background-color: #0f172a; color: #ffffff; text-align: left;">
+                            <th style="padding: 8px; border: 1px solid #0f172a;">Élève</th>
+                            <th style="padding: 8px; border: 1px solid #0f172a;">Voie</th>
+                            <th style="padding: 8px; border: 1px solid #0f172a;">Passage 1</th>
+                            <th style="padding: 8px; border: 1px solid #0f172a;">Passage 2</th>
+                            <th style="padding: 8px; border: 1px solid #0f172a; text-align: center;">Bilan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows}
+                    </tbody>
+                </table>
+            `;
+
+            // Insertion en haut du corps de page
+            document.body.prepend(printContainer);
+
             const opt = {
                 margin:       10,
-                filename:     `Session_Escalade_EPS_${new Date().toLocaleDateString('fr-FR').replace(/\//g, '-')}.pdf`,
+                filename:     `Bilan_ClimbEPS_${new Date().toLocaleDateString('fr-FR').replace(/\//g, '-')}.pdf`,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { 
-                    scale: 2, 
-                    useCORS: true,
-                    backgroundColor: '#ffffff',
-                    logging: false
-                },
+                html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
-            html2pdf().set(opt).from(element).save();
+
+            try {
+                await html2pdf().set(opt).from(printContainer).save();
+            } catch (err) {
+                alert("Erreur PDF : " + err.message);
+            } finally {
+                // Nettoyage immédiat du DOM
+                document.body.removeChild(printContainer);
+            }
         }
     </script>
 </body>
